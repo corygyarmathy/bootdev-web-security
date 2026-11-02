@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+
 # Build outputs
 /bin/
 /dist/
@@ -41,5 +42,15 @@ go.work.sum
 # Nix
 .direnv/
 
-# Local Nix-native Postgres cluster (make db-up)
+# Database
 /.pgdata/
+data/*.sqlite
+data/*.sqlite-shm
+data/*.sqlite-wal
+
+
+# Project-specific files
+data/*.log
+data/uploads/*
+!data/uploads/mystery-shack-tax-exemption.pdf
+data/bulk-tax-documents/
