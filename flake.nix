@@ -43,7 +43,6 @@
             export GOTOOLCHAIN="local"
             echo "web-security dev shell"
             echo "  go:        $(go version | cut -d' ' -f3)"
-            echo ""
           '';
         };
 
